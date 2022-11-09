@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Card Flip Game</title>
+</head>
+<body>
+    <div class="container">
+      <div class="players">
+        <div class="player-1">
+          <p class="player">Player 1</p>
+          <p id="player-1-counter">0</p>
+        </div>
+        <div class="player-2">
+          <p class="player">Player 2</p>
+          <p id="player-2-counter">0</p>
+        </div>
+      </div>
+        <h2>Chances: <span id="chance-counter"></span>/<span>3</span></h2>
+        <div class="cards-wrapper">
+            <div class="scene scene--card">
+                <button class="card" id="1">
+                  <div class="card__face card__face--front"></div>
+                  <div class="card__face card__face--back"><img src="./images/apple.jpeg" alt="Orange"></div>
+                </button>
+              </div>
+              <div class="scene scene--card">
+                <button class="card"id="2">
+                  <div class="card__face card__face--front"></div>
+                  <div class="card__face card__face--back"><img src="./images/banana.jpeg" alt="Banana"></div>
+                </button>
+              </div>
+              <div class="scene scene--card">
+                <button class="card" id="3">
+                  <div class="card__face card__face--front"></div>
+                  <div class="card__face card__face--back"><img src="./images/orange.jpeg" alt="Orange"></div>
+                </button>
+              </div>
+              <div class="scene scene--card">
+                <button class="card"id="4">
+                  <div class="card__face card__face--front"></div>
+                  <div class="card__face card__face--back"><img src="./images/banana.jpeg" alt="Banana"></div>
+                </button>
+              </div>
+              <div class="scene scene--card">
+                <button class="card"id="5">
+                  <div class="card__face card__face--front"></div>
+                  <div class="card__face card__face--back"><img src="./images/orange.jpeg" alt="Orange"></div>
+                </button>
+              </div>
+              <div class="scene scene--card">
+                <button class="card"id="6">
+                  <div class="card__face card__face--front"></div>
+                  <div class="card__face card__face--back"><img src="./images/apple.jpeg" alt="Apple"></div>
+                </button>
+              </div>
+              <div class="scene scene--card">
+                <button class="card"id="7">
+                  <div class="card__face card__face--front"></div>
+                  <div class="card__face card__face--back"><img src="./images/apple.jpeg" alt="Apple"></div>
+                </button>
+              </div>
+              <div class="scene scene--card">
+                <button class="card"id="8">
+                  <div class="card__face card__face--front"></div>
+                  <div class="card__face card__face--back"><img src="./images/apple.jpeg" alt="Apple"></div>
+                </button>
+              </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  max-width: 940px;
+  margin: 0 auto;
+  height: 100vh;
+  place-items: center;
+}
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 370px;
+  column-gap: 10px;
+}
+.scene {
+  height: 210px;
+  margin: 5px 0;
+  perspective: 600px;
+}
+.card {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transition: all 700ms linear;
+}
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+.players {
+  display: flex;
+  align-items: center;
+}
+.players :is(.player-1, .player-2) {
+  margin: 0 10px;
+  transition: border 350ms linear;
+}
+.active {
+  border-bottom: 1px solid green;
+}
+
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 260px;
+  text-align: center;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+}
+.card__face--front {
+  background: #838383; 
+}
+.card__face--back {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  border: 1px solid #838383;
+}
+.card__face--back > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
